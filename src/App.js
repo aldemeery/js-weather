@@ -1,11 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
+import Search from "./Search";
 
 const App = () => {
     return (
         <React.StrictMode>
-            <div>
-                <header>Something</header>
+            <div className="content">
+                <Search />
             </div>
         </React.StrictMode>
     );
