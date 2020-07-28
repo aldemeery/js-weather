@@ -3,7 +3,7 @@ class Api {
 
     static async getWeather(location) {
         return fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${this.appkey}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${this.appkey}`
         )
             .then((res) => res.json())
             .then((res) => {
