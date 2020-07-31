@@ -11,6 +11,7 @@ const Search = () => {
       .then((weather) => {
         setLocation('');
         setWeather(weather);
+        document.body.classList = weather.status;
       })
       .catch(() => {
         alert('Location not found!');
@@ -22,6 +23,7 @@ const Search = () => {
     Api.getWeather('London')
       .then((weather) => {
         setWeather(weather);
+        document.body.classList = weather.status;
       })
       .catch(() => {
         alert('Location not found!');
@@ -29,26 +31,26 @@ const Search = () => {
   }, [setWeather]);
 
   return (
-        <div>
-            <form
-                action=""
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  getWeather();
-                }}
-            >
-                <input
-                    type="text"
-                    placeholder="Location (e.g. London)"
-                    className="search"
-                    value={location}
-                    onChange={(e) => {
-                      setLocation(e.target.value);
-                    }}
-                />
-            </form>
-            <Weather weather={weather} />
-        </div>
+    <div>
+      <form
+        action=""
+        onSubmit={(e) => {
+          e.preventDefault();
+          getWeather();
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Location (e.g. London)"
+          className="search"
+          value={location}
+          onChange={(e) => {
+            setLocation(e.target.value);
+          }}
+        />
+      </form>
+      <Weather weather={weather} />
+    </div>
   );
 };
 

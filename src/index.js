@@ -4,11 +4,11 @@ import Search from './Search'; // eslint-disable-line no-unused-vars
 import './style.css';
 
 const App = () => ( // eslint-disable-line no-unused-vars
-        <React.StrictMode>
-            <div className="content">
-                <Search />
-            </div>
-        </React.StrictMode>
+    <React.StrictMode>
+        <div className="content">
+            <Search />
+        </div>
+    </React.StrictMode>
 );
 
 render(<App />, document.getElementById('root'));

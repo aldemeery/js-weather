@@ -14,7 +14,8 @@ body {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 3px;
-  border: 1px solid #666;
+  border: none;
+  box-shadow: 0 0 15px #333;
   font-weight: 300;
 }
 
@@ -38,4 +39,54 @@ body {
 
 .location {
   text-transform: uppercase;
+}
+
+.mist,
+.smoke,
+.haze,
+.dust,
+.fog,
+.sand,
+.ash,
+.squall,
+.tornado {
+  background: url('../images/haze.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thunderstorm {
+  background: url('../images/thunderstorm.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rain {
+  background: url('../images/rain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drizzle {
+  background: url('../images/drizzle.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snow {
+  background: url('../images/snowing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clear {
+  background: url('../images/clear.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clouds {
+  background: url('../images/clouds.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

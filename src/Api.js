@@ -7,6 +7,7 @@ class Api {
       )
         .then((res) => res.json())
         .then((res) => ({
+          status: res.weather[0].main.toLowerCase(),
           location: res.name,
           temp: res.main.temp,
           min: res.main.temp_min,
