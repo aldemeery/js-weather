@@ -16,11 +16,12 @@ module.exports = {
           'style-loader',
           {
             loader: 'css-loader',
-            options: {
-              url: false,
-            },
           },
         ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        loader: 'url-loader',
       },
     ],
   },
