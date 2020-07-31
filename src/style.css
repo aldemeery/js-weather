@@ -90,3 +90,26 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.btn {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-group .btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.btn-group .btn:last-child {
+  border-radius: 0 5px 5px 0;
+  border-right: 1px solid #333;
+}
+
+.btn-group {
+  margin-top: 50px;
+  display: inline-block;
+}

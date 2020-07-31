@@ -1,9 +1,9 @@
 class Api {
     static appkey = '4e786e09c343b6446095de0452f95f63';
 
-    static async getWeather(location) {
+    static async getWeather(location, unit = 'imperial') {
       return fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${this.appkey}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${this.appkey}&units=${unit}`,
       )
         .then((res) => res.json())
         .then((res) => ({
