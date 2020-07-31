@@ -1,16 +1,14 @@
-import React from "react";
-import { render } from "react-dom";
-import Search from "./Search";
-import "./style.css";
+import React from 'react'; // eslint-disable-line no-unused-vars
+import { render } from 'react-dom';
+import Search from './Search'; // eslint-disable-line no-unused-vars
+import './style.css';
 
-const App = () => {
-    return (
+const App = () => ( // eslint-disable-line no-unused-vars
         <React.StrictMode>
             <div className="content">
                 <Search />
             </div>
         </React.StrictMode>
-    );
-};
+);
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
