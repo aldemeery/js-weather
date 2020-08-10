@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Check it out here](https://aldemeery.github.io/weather/)
+[Check it out here](https://aldemeery.github.io/js-weather/)
 
 ## Getting Started
 
