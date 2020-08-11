@@ -6,8 +6,8 @@
 
 ## Built With
 
--   Parcel
--   React
+-   Webpack
+-   Javascript
 -   HTML5
 -   CSS3
 
@@ -20,8 +20,8 @@
 In order to start this project, you will need:
 
 ```bash
-$ git clone https://github.com/aldemeery/weather.git
-$ cd weather
+$ git clone https://github.com/aldemeery/js-weather.git
+$ cd js-weather
 $ git checkout develop
 $ npm run dev
 ```

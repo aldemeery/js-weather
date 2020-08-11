@@ -111,5 +111,5 @@ body {
 
 .btn-group {
   margin-top: 50px;
-  display: inline-block;
+  display: inline-flex;
 }

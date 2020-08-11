@@ -1,14 +1,5 @@
-import React from 'react'; // eslint-disable-line no-unused-vars
-import { render } from 'react-dom';
-import Search from './Search'; // eslint-disable-line no-unused-vars
 import './style.css';
+import App from './App';
 
-const App = () => ( // eslint-disable-line no-unused-vars
-    <React.StrictMode>
-        <div className="content">
-            <Search />
-        </div>
-    </React.StrictMode>
-);
-
-render(<App />, document.getElementById('root'));
+const app = new App();
+app.run();
