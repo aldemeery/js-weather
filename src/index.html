@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Weather!</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-    <body>
-        <div id="root">not rendered</div>
-        <script src="./App.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather!</title>
+  </head>
+  <body class="haze">
+    <div class="content">
+      <div>
+        <form id="form" action="">
+          <input
+            type="text"
+            placeholder="Location (e.g. London,UK)"
+            class="search"
+            name="search"
+          />
+        </form>
+        <div>
+          <h1 class="location">London</h1>
+          <div class="info">
+            <span class="temp"></span>
+            <img
+              alt="icon"
+              class="icon"
+              src="https://openweathermap.org/img/wn/01d@2x.png"
+            />
+          </div>
+          <div class="min-max"></div>
+        </div>
+        <div class="btn-group">
+          <button class="btn" id="imperial" disabled>F°</button>
+          <button class="btn" id="metric">C°</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

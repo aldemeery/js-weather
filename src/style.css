@@ -1,1 +1,115 @@
-/* Silence is golden */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.content {
+  width: 512px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.search {
+  height: 50px;
+  font-size: 1.5em;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 15px #333;
+  font-weight: 300;
+}
+
+.icon {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.temp {
+  font-size: 10em;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.min-max {
+  font-size: 1.5em;
+}
+
+.location {
+  text-transform: uppercase;
+}
+
+.mist,
+.smoke,
+.haze,
+.dust,
+.fog,
+.sand,
+.ash,
+.squall,
+.tornado {
+  background: url('../images/haze.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thunderstorm {
+  background: url('../images/thunderstorm.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rain {
+  background: url('../images/rain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drizzle {
+  background: url('../images/drizzle.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snow {
+  background: url('../images/snowing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clear {
+  background: url('../images/clear.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clouds {
+  background: url('../images/clouds.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-group .btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.btn-group .btn:last-child {
+  border-radius: 0 5px 5px 0;
+  border-right: 1px solid #333;
+}
+
+.btn-group {
+  margin-top: 50px;
+  display: inline-flex;
+}
